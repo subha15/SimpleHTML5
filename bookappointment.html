@@ -81,9 +81,14 @@ var urlParams;
 
 
     if(urlParams){
-        document.querySelector("#name").value = urlParams["name"];
-        document.querySelector("#mail").value = urlParams["mail"];
-        document.querySelector("#tel").value = urlParams["tel"];
+        if(urlParams["name"])
+           document.querySelector("#name").value = urlParams["name"];
+      
+        if(urlParams["mail"])      
+           document.querySelector("#mail").value = urlParams["mail"];
+
+        if(urlParams["tel"])
+           document.querySelector("#tel").value = urlParams["tel"];
     } 
        
 })();
