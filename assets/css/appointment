@@ -111,9 +111,7 @@ label.light {
   border-radius: 100%;
 }
 
-
-
-  form {
+form {
     max-width: 480px;
-  }
+}
 
