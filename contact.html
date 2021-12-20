@@ -129,8 +129,8 @@
         <form action="/">
             <h1>Contact Us</h1>
             <div class="info">
-                <input class="fname" id="name" type="text" name="FirstName" placeholder="First name">
-                <input class="fname" id="name" type="text" name="LastName" placeholder="Last name">
+                <input class="fname" id="firstname" type="text" name="FirstName" placeholder="First name">
+                <input class="fname" id="lastname" type="text" name="LastName" placeholder="Last name">
                 <input type="text" id="mail" name="Email" placeholder="Email">
                 <input type="text" id="tel" name="PhoneNumber" placeholder="Phone number">  
                 <input type="text" id="location" name="Location" placeholder="Location">   
@@ -159,8 +159,10 @@
 
 
         if (urlParams) {
-            if (urlParams["name"])
-                document.querySelector("#name").value = urlParams["name"];
+            if (urlParams["firstname"])
+                document.querySelector("#firstname").value = urlParams["firstname"];
+               if (urlParams["lastname"])
+                document.querySelector("#lastname").value = urlParams["lastname"];
             if (urlParams["mail"])
                 document.querySelector("#mail").value = urlParams["mail"];
             if(urlParams["tel"])
